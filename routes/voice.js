@@ -34,13 +34,13 @@ exports.interview = function(request, response) {
 
         // If question is null, we're done!
         if (!question) {
-            say('Thank you for taking this survey. Goodbye!');
+            say('Thank you. If you have time take our extended survey at Winlock Needs Internet .com Goodbye!');
             return respond();
         }
 
         // Add a greeting if this is the first question
         if (questionIndex === 0) {
-            say('Thank you for taking our survey. Please listen carefully '
+            say('Thank you calling the Winlock Internet survey. Please listen carefully'
                 + 'to the following questions.');
         }
 
@@ -59,7 +59,7 @@ exports.interview = function(request, response) {
                 maxLength: 60
             });
         } else if (question.type === 'boolean') {
-            say('Press one for "yes", and any other key for "no".');
+            say('Press one for "yes", and two "no".');
             twiml.gather({
                 timeout: 10,
                 numDigits: 1
