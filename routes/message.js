@@ -56,7 +56,7 @@ module.exports = function(request, response) {
 
         // Add a greeting if this is the first question
         if (questionIndex === 0) {
-            responseMessage += 'Thank you. If you have time take our expanded survey here http://bit.ly/Winlock ';
+            responseMessage += 'Thank you for taking our survey! ';
         }
 
         // Add question text
