@@ -34,7 +34,7 @@ exports.interview = function(request, response) {
 
         // If question is null, we're done!
         if (!question) {
-            say('Thank you. If you have time take our extended survey at Winlock Needs Internet .com Goodbye!');
+            say('Thank you. If you have time take our extended survey at, Winlock, Needs, Internet .com, Goodbye!');
             return respond();
         }
 
@@ -59,7 +59,7 @@ exports.interview = function(request, response) {
                 maxLength: 60
             });
         } else if (question.type === 'boolean') {
-            say('Press one for "yes", and two "no".');
+            say('Press one for "yes", and two for "no".');
             twiml.gather({
                 timeout: 10,
                 numDigits: 1
